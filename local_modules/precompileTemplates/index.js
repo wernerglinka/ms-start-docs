@@ -39,8 +39,7 @@ function precompileNunjucksTemplates(options) {
     const precompileOpts = {
       include: [/.*\.njk/]
     };
-    const precompiledTemplates = nunjucks.precompile(templatesDir, { precompileOpts });
-
+    const precompiledTemplates = nunjucks.precompile(templatesDir, precompileOpts);
     fs.writeFileSync(path.join(targetDir, '/precompiledTemplates.js'), precompiledTemplates);
 
     // end time

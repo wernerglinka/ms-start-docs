@@ -1,3 +1,5 @@
+@import "./display.css";
+
 /* Built-in styles */
 @import "./components/base/normalize.css";
 @import "./components/base/variables.css";
@@ -11,3 +13,15 @@
 @import "./components/base/prism.css";
 
 /* Section styles */
+@import "./components/audio.css";
+@import "./components/icon.css";
+@import "./components/image.css";
+@import "./components/lottie.css";
+@import "./components/media.css";
+@import "./components/text-audio.css";
+@import "./components/text-icon.css";
+@import "./components/text-image.css";
+@import "./components/text-lottie.css";
+@import "./components/text-video.css";
+@import "./components/text.css";
+@import "./components/video.css";

@@ -18,6 +18,7 @@ const browserSync = require('browser-sync');
 
 const mypostcss = require("./local_modules/mypostcss/index.js");
 const precompileNunjucksTemplates = require("./local_modules/precompileTemplates/index.js");
+const getSectionTemplates = require("./local_modules/getSectionTemplates/index.js");
 
 const engineOptions = {
   path: ["lib/layouts"],
@@ -76,6 +77,11 @@ function msBuild() {
         templatesDir: 'lib/layouts/sections',
         destDir: 'lib/assets'
       })) 
+
+      // get section templates
+      .use(getSectionTemplates({
+        templatesDir: 'lib/layouts/sections',
+      }))
 
       // Add metadata from JSON files
       .use( metadata(metadataFilesObject()))
@@ -139,6 +145,13 @@ function msBuild() {
           lastmod: new Date()
         }
       })) 
+
+      // display metadata
+      .use((files, metalsmith, done) => {
+        //console.log("Metadata:");
+        //console.log(metalsmith.metadata());
+        done();
+      })
   )
 }
 

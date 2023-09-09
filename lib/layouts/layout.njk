@@ -9,18 +9,21 @@
     
     {% include "sections/header.njk" %}
 
-    <main id="swup" class="transition-fade">
-        
-      {% block body %}
-        This is the default contents
-      {% endblock %}
-        
+    <main class="doc-wrapper">
+      {% include "doc-nav.njk" %}
+      {% include "doc.njk" %}
     </main>
     
     {% include "sections/footer.njk" %}
 
     <a class="to-top" href="#at-top"><span class="sr-only">Scroll to top</span>{% include "icons/arrow-up-circle.njk" %}</a>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/assets/nunjucksCustomFilters.js"></script>
+    <script src="/assets/nunjucks-slim.js"></script>
+    <script src="/assets/precompiledTemplates.js"></script>
+    <script src="/assets/initialSectionStates.js"></script>
+    <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
     <script src="/assets/scripts.js"></script>
   </body>
 </html>
