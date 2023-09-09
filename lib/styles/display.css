@@ -1,5 +1,5 @@
 .doc-wrapper {
-  width: min(100%, 120rem);
+  width: min(100%, 160rem);
   margin: 0 auto;
   padding: 2rem;
   display: flex;
@@ -38,5 +38,9 @@
   .doc-content {
     width: 100%;
     height: 100%;
+
+    .section-wrapper {
+      border: 1px solid var(--color-gray);
+    }
   }
 }

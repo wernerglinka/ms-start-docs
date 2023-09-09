@@ -1,8 +1,17 @@
 <div class="sidebar">
   <p><strong>Section Templates</strong></p>
   <ul class="section-templates">
+    
+    {# only show section templates that are usable #}
     {% for sectionTemplate in sectionTemplates %}
+      {% if  sectionTemplate !== "footer" 
+         and sectionTemplate !== "header" 
+         and sectionTemplate !== "head"
+         and sectionTemplate !== "icons"
+         and sectionTemplate !== "particles" 
+      %}
       <li class="js-template">{{ sectionTemplate }}</li>
+      {% endif %}
     {% endfor %}
   </ul>
 </div>

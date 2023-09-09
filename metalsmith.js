@@ -74,7 +74,7 @@ function msBuild() {
 
       // Precompile Nunjucks templates
       .use(precompileNunjucksTemplates({
-        templatesDir: 'lib/layouts/sections',
+        templatesDir: 'lib/layouts',
         destDir: 'lib/assets'
       })) 
 

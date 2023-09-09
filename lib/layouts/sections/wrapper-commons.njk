@@ -1,22 +1,3 @@
-{#
-  Image
-  Renders an image with a caption
-  
-  params: {
-    image: {
-      src: string - the image id
-      alt: string - the alt text
-      caption: string - the caption
-    }
-  }
-
-  YAML example:
-  image:
-    src: ''
-    alt: ''
-    caption: ''
-#}
-
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -59,14 +40,3 @@
 {% if section.containerFields.background.image %}
   {% set sectionStyles = sectionStyles ~ "background-image: url(" ~ section.containerFields.background.image ~ ");" %}
 {% endif %}
-
-<{{section.container}} 
-  class="{{ sectionClasses }}" 
-  {% if sectionId %} id="{{ sectionId }}" {% endif %} 
-  {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
->
-  <div class="image-wrapper section-inner">
-    <img src="{{ section.params.image.src }}" alt="{{ section.params.image.alt }}" />
-    <p class="caption">{{ section.params.image.caption }}</p>
-  </div>
-</{{section.container}}>

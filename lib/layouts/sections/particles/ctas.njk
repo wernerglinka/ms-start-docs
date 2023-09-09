@@ -1,6 +1,6 @@
-{% if params.hasCtas %}
+{% if section.params.hasCtas %}
   <div class="ctas">  
-    {% for cta in params.ctas %}
+    {% for cta in section.params.ctas %}
       {% if cta.isButton %}
         {% if cta.isExternal %}
           <a class="button-link {{ cta.buttonStyle }}" href="{{cta.url}}" target="_blank" rel="noopener noreferrer">{{ cta.label}}</a>

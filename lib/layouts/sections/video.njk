@@ -29,37 +29,85 @@
 #}
 
 
+{# build the sections class string #}
+{% set sectionClasses = "section-wrapper" %}
 
-<div class="video-wrapper section-inner">
+{# add user defined section class(es) #}
+{% if section.containerFields.containerClass %}
+  {% set sectionClasses = sectionClasses ~ " " ~ section.containerFields.containerClass %}
+{% endif %}
 
-  {% if params.video.inline %}
-    <div class="video inline">
-      <div class="inline-video-wrapper js-inline-video-wrapper">
-        <div class="close">{% include "icons/x.njk" %}</div>
-        <div 
-          class="js-inline-video" 
-          data-videoid="{{ params.video.id }}" 
-          data-starttime="{{ params.video.start }}" 
-          data-endtime="{{ params.video.end }}"
-        ></div>
+{% if section.containerFields.inContainer %}
+  {% set sectionClasses = sectionClasses ~ " inContainer" %}
+{% endif %}
+
+{% if section.containerFields.isNarrow %}
+  {% set sectionClasses = sectionClasses ~ " isNarrow" %}
+{% endif %}
+
+{% if section.containerFields.isDisabled %}
+  {% set sectionClasses = sectionClasses ~ " isDisabled" %}
+{% endif %}
+
+{% if section.containerFields.isAnimated %}
+  {% set sectionClasses = sectionClasses ~ " isAnimated" %}
+{% endif %}
+
+{% if section.containerFields.background.isDark %}
+  {% set sectionClasses = sectionClasses ~ " isDark" %}
+{% endif %}
+
+{# get the sections id string #}
+{% set sectionId = "" %}
+{% if section.containerFields.containerId %}
+  {% set sectionId = section.containerFields.containerId %}
+{% endif %}
+
+{# build the section inline styles string #}
+{% set sectionStyles = "" %}
+{% if section.containerFields.background.color %}
+  {% set sectionStyles = sectionStyles ~ "background-color:" ~ section.containerFields.background.color ~ ";" %}
+{% endif %}
+{% if section.containerFields.background.image %}
+  {% set sectionStyles = sectionStyles ~ "background-image: url(" ~ section.containerFields.background.image ~ ");" %}
+{% endif %}
+
+<{{section.container}} 
+  class="{{ sectionClasses }}" 
+  {% if sectionId %} id="{{ sectionId }}" {% endif %} 
+  {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
+>
+  <div class="video-wrapper section-inner">
+
+    {% if section.params.video.inline %}
+      <div class="video inline">
+        <div class="inline-video-wrapper js-inline-video-wrapper">
+          <div class="close">{% include "icons/x.njk" %}</div>
+          <div 
+            class="js-inline-video" 
+            data-videoid="{{ section.params.video.id }}" 
+            data-starttime="{{ section.params.video.start }}" 
+            data-endtime="{{ section.params.video.end }}"
+          ></div>
+        </div>
+      
+        <button class="video-trigger js-video-trigger">
+          <div class="play-button">{% include "icons/play.njk" %}</div>
+          <img src="{{ section.params.video.tn }}" alt="{{ section.params.video.title }}">
+        </button>
       </div>
-    
-      <button class="video-trigger js-video-trigger">
-        <div class="play-button">{% include "icons/play.njk" %}</div>
-        <img src="{{ params.video.tn }}" alt="{{ params.video.title }}">
-      </button>
-    </div>
-  {% else %}
-    <div class="video" >
-      <button 
-        class="js-modal-video" 
-        data-videoid={{ params.video.id}} 
-        data-videosrc={{ params.video.src }}
-      >
-        <div class="play-button">{% include "icons/play.njk" %}</div>
-        <img src="{{ params.video.tn }}" alt="{{ params.video.title }}">
-      </button>
-    </div>
-  {% endif %}
+    {% else %}
+      <div class="video" >
+        <button 
+          class="js-modal-video" 
+          data-videoid={{ section.params.video.id}} 
+          data-videosrc={{ section.params.video.src }}
+        >
+          <div class="play-button">{% include "icons/play.njk" %}</div>
+          <img src="{{ section.params.video.tn }}" alt="{{ section.params.video.title }}">
+        </button>
+      </div>
+    {% endif %}
 
-</div>
+  </div>
+</{{section.container}}>
