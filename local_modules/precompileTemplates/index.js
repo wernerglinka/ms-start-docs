@@ -3,7 +3,7 @@ const path = require('path');
 const nunjucks = require('nunjucks');
 
 const defaults = {
-  templatesDir: '/lib/layouts/sections',
+  templatesDir: 'lib/layouts/sections',
   destDir: 'lib/assets'
 };
 
