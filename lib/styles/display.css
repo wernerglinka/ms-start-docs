@@ -49,6 +49,11 @@
     .section-wrapper {
       border: 1px solid var(--color-gray);
       animation: fadein 1s ease-in-out;
+
+      &.isDisabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
     }
   }
   .props-display {

@@ -1,21 +1,21 @@
-{% if section.params.text.prefix %}
-  <p class="prefix">{{ section.params.text.prefix }}</p>
+{% if section.text.prefix %}
+  <p class="prefix">{{ section.text.prefix }}</p>
 {% endif %}
 
-{% if section.params.text.title %}
-  {% if section.params.text.header === "h1" %}
-    <h1 class="title">{{ section.params.text.title }}</h1>
-  {% elif section.params.text.header === "h2" %}
-    <h2 class="title">{{ section.params.text.title }}</h2>
+{% if section.text.title %}
+  {% if section.text.header === "h1" %}
+    <h1 class="title">{{ section.text.title }}</h1>
+  {% elif section.text.header === "h2" %}
+    <h2 class="title">{{ section.text.title }}</h2>
   {% else %}
-    <h3 class="title">{{ section.params.text.title }}</h3>
+    <h3 class="title">{{ section.text.title }}</h3>
   {% endif %}
 {% endif %}
 
-{% if section.params.text.subtitle %}
-  <p class="sub-title">{{ section.params.text.subtitle }}</p>
+{% if section.text.subtitle %}
+  <p class="sub-title">{{ section.text.subtitle }}</p>
 {% endif %}
 
-{% if section.params.text.prose %}
-  <div class="prose">{{ section.params.text.prose | mdToHTML | safe }}</div>
+{% if section.text.prose %}
+  <div class="prose">{{ section.text.prose | mdToHTML | safe }}</div>
 {% endif %}

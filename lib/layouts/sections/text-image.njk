@@ -95,16 +95,16 @@
   {% if sectionId %} id="{{ sectionId }}" {% endif %} 
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
-  <div class="text-media-wrapper section-inner {% if section.params.isReverse %}is-reverse{% endif %}">
+  <div class="text-media-wrapper section-inner {% if section.isReverse %}is-reverse{% endif %}">
     
     {% include "sections/particles/text.njk" %}
 
     {% include "sections/particles/ctas.njk" %}
     
-    <div class="image {% if section.params.image.caption %}has-caption{% endif %}">
-      <img src="{{ section.params.image.src }}" alt="{{ section.params.image.alt }}" />
-      {% if section.params.image.caption %}
-        <p class="caption">{{ section.params.image.caption }}</p>
+    <div class="image {% if section.image.caption %}has-caption{% endif %}">
+      <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
+      {% if section.image.caption %}
+        <p class="caption">{{ section.image.caption }}</p>
       {% endif %}
     </div><!-- /.image -->
 

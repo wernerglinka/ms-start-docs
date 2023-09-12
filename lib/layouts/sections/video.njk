@@ -79,32 +79,32 @@
 >
   <div class="video-wrapper section-inner">
 
-    {% if section.params.video.inline %}
+    {% if section.video.inline %}
       <div class="video inline">
         <div class="inline-video-wrapper js-inline-video-wrapper">
           <div class="close">{% include "icons/x.njk" %}</div>
           <div 
             class="js-inline-video" 
-            data-videoid="{{ section.params.video.id }}" 
-            data-starttime="{{ section.params.video.start }}" 
-            data-endtime="{{ section.params.video.end }}"
+            data-videoid="{{ section.video.id }}" 
+            data-starttime="{{ section.video.start }}" 
+            data-endtime="{{ section.video.end }}"
           ></div>
         </div>
       
         <button class="video-trigger js-video-trigger">
           <div class="play-button">{% include "icons/play.njk" %}</div>
-          <img src="{{ section.params.video.tn }}" alt="{{ section.params.video.title }}">
+          <img src="{{ section.video.tn }}" alt="{{ section.video.title }}">
         </button>
       </div>
     {% else %}
       <div class="video" >
         <button 
           class="js-modal-video" 
-          data-videoid={{ section.params.video.id}} 
-          data-videosrc={{ section.params.video.src }}
+          data-videoid={{ section.video.id}} 
+          data-videosrc={{ section.video.src }}
         >
           <div class="play-button">{% include "icons/play.njk" %}</div>
-          <img src="{{ section.params.video.tn }}" alt="{{ section.params.video.title }}">
+          <img src="{{ section.video.tn }}" alt="{{ section.video.title }}">
         </button>
       </div>
     {% endif %}

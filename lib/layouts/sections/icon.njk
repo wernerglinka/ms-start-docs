@@ -64,7 +64,7 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="icon-wrapper section-inner">
-    {% include "icons/" + section.params.icon.name + ".njk" ignore missing %}
-    <p class="caption">{{ section.params.icon.caption }}</p>
+    {% include "icons/" + section.icon.name + ".njk" ignore missing %}
+    <p class="caption">{{ section.icon.caption }}</p>
   </div>
 </{{section.container}}>

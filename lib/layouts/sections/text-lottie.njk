@@ -98,7 +98,7 @@
   {% if sectionId %} id="{{ sectionId }}" {% endif %} 
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
-  <div class="text-media-wrapper section-inner {% if section.params.isReverse %}is-reverse{% endif %}">
+  <div class="text-media-wrapper section-inner {% if section.isReverse %}is-reverse{% endif %}">
     
     {% include "sections/particles/text.njk" %}
 
@@ -107,9 +107,9 @@
     <div class="lottie">
     <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
     <div class="animation">
-      <lottie-player src="{{ section.params.lottie.src}}" background="transparent"  speed="1" loop autoplay></lottie-player>
+      <lottie-player src="{{ section.lottie.src}}" background="transparent"  speed="1" loop autoplay></lottie-player>
     </div>
-    <p class="caption">{{ section.params.caption }}</p>
+    <p class="caption">{{ section.caption }}</p>
   </div>
 
   </div>
