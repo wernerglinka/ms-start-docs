@@ -44,7 +44,7 @@
   }
   .doc-content {
     width: 100%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 
     .section-wrapper {
       border: 1px solid var(--color-gray);
@@ -58,8 +58,24 @@
   }
 
   .doc-styles {
-    margin: 3rem 0;
-    border: 1px solid var(--color-light-gray);
+    margin: 0 0 2rem;
+    background-color: var(--color-light-gray);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+
+    &.is-active {
+      margin: 2rem 0;
+      max-height: 40rem;
+      padding: 2rem;
+    }
+    
+    #editor {
+      border: 1px solid var(--color-white);
+      margin-bottom: 2rem;
+    }
+
   }
 
   .props-display {
