@@ -56,6 +56,12 @@
       }
     }
   }
+
+  .doc-styles {
+    margin: 3rem 0;
+    border: 1px solid var(--color-light-gray);
+  }
+
   .props-display {
     background-color: var(--color-light-gray);
     padding: 2rem;
