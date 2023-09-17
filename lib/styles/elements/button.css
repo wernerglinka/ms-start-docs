@@ -3,6 +3,7 @@
   padding: 12px 30px;
   margin-right: 30px;
   font-size: 14px;
+  font-weight: bold;
   color: var(--color-primary);
   border-width: 2px;
   border-style: solid;
@@ -15,7 +16,7 @@
 
   &:hover {
     color: var(--color-primary-complement);
-    background-color: var(--color-primary);;
+    background-color: var(--color-primary);
   }
 
   &.primary {
@@ -26,6 +27,7 @@
     &:hover {
       color: var(--color-highlight);
       background-color: var(--color-primary);
+      border-color: var(--color-primary);
     }
   }
   &.secondary {
@@ -36,6 +38,7 @@
     &:hover {
       color: var(--color-secondary);
       background-color: transparent;
+      border-color: var(--color-secondary);
     }
   }
 }
