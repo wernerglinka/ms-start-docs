@@ -1,6 +1,8 @@
 .header-wrapper {
-  height: var(--header-height);
-  width: 100%;
+  position: relative;
+  z-index: 1000;
+  /* fluid header height between 1200px/10rem and 400px/5rem */
+  height: clamp(5rem, 0.0000rem + 12.5000vw, 10rem);
 }
 
 header {
