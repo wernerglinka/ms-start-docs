@@ -30,7 +30,7 @@ sections:
       prose: |-
         A section component that renders an image combined with a text area. The text area may be formatted with markdown. Image location default is right, but may be reversed by setting the `isReverse` field to true.
 
-        Image is curtesy of unsplash.com.
+        Image by unsplash.com.
   
   - container: section
     name: text-image

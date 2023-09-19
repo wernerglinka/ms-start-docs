@@ -29,6 +29,8 @@ sections:
       subtitle: "Media Section Composed from Text and lottie Partials"
       prose: |-
         A section component that renders a lottie animation combined with a text area. The text area may be formatted with markdown. The lottie location default is right, but may be reversed by setting the `isReverse` field to true.
+
+        Lottie animation by [lottiefiles.com](https://lottiefiles.com/)
   
   - container: section
     name: text-lottie

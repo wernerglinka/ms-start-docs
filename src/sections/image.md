@@ -30,7 +30,7 @@ sections:
       prose: |-
         A section component that renders an image with an optional caption. 
         
-        Image is curtesy of unsplash.com.
+        Image by unsplash.com.
 
   - container: section
     name: image

@@ -30,7 +30,7 @@ sections:
       prose: |-
         A section component that renders a video player with Thumbnail combined with a text area. The text area may be formatted with markdown. Video player location default is right, but may be reversed by setting the `isReverse` field to true.
 
-        Thumbnail is curtesy of unsplash.com.
+        Thumbnail by unsplash.com.
   
   - container: section
     name: text-video
