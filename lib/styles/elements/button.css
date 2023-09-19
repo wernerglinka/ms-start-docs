@@ -29,6 +29,14 @@
       background-color: var(--color-primary);
       border-color: var(--color-primary);
     }
+
+    &.no-hover {
+      &:hover {
+        color: var(--color-primary);
+        border-color: var(--color-highlight);
+        background-color: var(--color-highlight);
+      }
+    }
   }
   &.secondary {
     color: var(--color-white);

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include "sections/head.njk" %}
+    {% include "page-sections/head.njk" %}
   </head>
 
   <body class="{{ bodyClasses }}" >
     <div id="at-top"></div>
     
-    {% include "sections/header.njk" %}
+    {% include "page-sections/header.njk" %}
 
     <main id="js-docs-wrapper" class="doc-wrapper">
       {% include "doc-nav.njk" %}
       {% include "doc.njk" %}
     </main>
     
-    {% include "sections/footer.njk" %}
+    {% include "page-sections/footer.njk" %}
 
     <a class="to-top" href="#at-top"><span class="sr-only">Scroll to top</span>{% include "icons/arrow-up-circle.njk" %}</a>
 

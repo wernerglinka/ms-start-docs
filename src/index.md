@@ -49,7 +49,7 @@ sections:
       header: "h1"
       subtitle: ""
       prose: |-
-        Metalsmith First uses a modular approach to building websites. Rather than relying on frontmatter solely for defining page configurations, I have harnessed frontmatter  to construct entire pages with reusable section components. This distinctive approach, often called "section-based design," offers the flexibility to employ the same component across various pages. This design philosophy streamlines the process, enabling uniformity in structuring a blog post and a product listing landing page.
+        Metalsmith First uses a modular approach to building websites. Rather than relying on frontmatter solely for defining page configurations, frontmatter  is used to construct entire pages with reusable section components. This distinctive approach, often called "section-based design," offers the flexibility to employ the same component across various pages.
 
-        This web site serves as a documentation for all the section components available with Metalsmith First. Each section component has its own page with a detailed description of its purpose and usage. The documentation also includes a live demo of each component, so you can see how it looks and behaves in the browser.
+        This web site serves as a documentation for all the section components available with Metalsmith First. Each section component has its own page with a detailed description of its purpose and usage. A [sandbox](/sandbox) is available in which each component's properties  can be manipulated, so you can see how it looks and behaves in the browser.
 ---

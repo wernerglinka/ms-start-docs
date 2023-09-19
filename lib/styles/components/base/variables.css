@@ -4,8 +4,8 @@
   --content-margin: 0 auto;
   --narrow-content-width: 80rem;
 
-  --header-height: clamp(6rem, 3.0000rem + 7.5000vw, 12rem);
-  --logo-size: clamp(4rem, 1.0000rem + 7.5000vw, 10rem);
+  --header-height: clamp(6rem, 4.0000rem + 5.0000vw, 10rem);
+  --logo-size: clamp(3rem, 1.5000rem + 3.7500vw, 6rem);
 
   /**
     * Default padding for containers and sections
@@ -38,8 +38,10 @@
   --color-very-dark-translucent: rgba(0, 0, 0, 0.9);
   --color-dark-translucent: rgba(0, 0, 0, 0.5);
   --color-light-translucent: rgba(0, 0, 0, 0.2);
+  --color-white-translucent: rgba(255, 255, 255, 0.9);
 
-  --text-shadow: text-shadow: 0px 0px 4px rgba(128, 0, 0, 0.5);
+  --text-shadow: 0px 0px 4px rgba(128, 0, 0, 0.5);
+  --box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 80px rgba(0, 0, 0, 0.07); 
 
   /**
     * Typography

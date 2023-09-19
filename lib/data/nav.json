@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Audio",
+    "url": "/sections/audio"
+  },
+  {
+    "title": "Icon",
+    "url": "/sections/icon"
+  },
+  {
+    "title": "text-lottie",
+    "url": "/sections/image"
+  },
+  {
+    "title": "Lottie",
+    "url": "/sections/lottie"
+  },
+  {
+    "title": "Text with Audio",
+    "url": "/sections/text-audio"
+  },
+  {
+    "title": "Text with Icon",
+    "url": "/sections/text-icon"
+  },
+  {
+    "title": "Text with Image",
+    "url": "/sections/text-image"
+  },
+  {
+    "title": "Text with Lottie",
+    "url": "/sections/text-lottie"
+  },
+  {
+    "title": "Text with Video",
+    "url": "/sections/text-video"
+  },
+  {
+    "title": "Text",
+    "url": "/sections/text"
+  },
+  {
+    "title": "Video",
+    "url": "/sections/video"
+  }
+]

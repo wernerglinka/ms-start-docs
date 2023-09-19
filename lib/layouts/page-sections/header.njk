@@ -1,0 +1,20 @@
+<div class="header-wrapper js-header">
+  <header>
+    <div class="container">
+      <div class="brand">
+        <a class="js-home-link home-link" href="/">
+          <span class="sr-only">Go home</span>{% include "../icons/logo-bug.njk" %}
+        </a>
+      </div>
+      <nav>
+        <a class="button-link primary no-hover">Select a Section</a>
+        <ul class="section-select">
+          {% for item in nav %}
+            <li class="nav-item">
+              <a href="{{ item.url }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </header>
+</div>
