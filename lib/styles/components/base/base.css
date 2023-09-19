@@ -23,6 +23,10 @@ body {
   clear: both;
 }
 
+.page-title {
+  padding: 0 var(--default-content-padding) var(--default-content-padding);
+}
+
 .container {
   width: min(100%, var(--max-content-width));
   margin: var(--content-margin);

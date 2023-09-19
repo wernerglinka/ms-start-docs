@@ -25,15 +25,11 @@
     background-color: var(--color-highlight);
 
     &:hover {
-      color: var(--color-highlight);
-      background-color: var(--color-primary);
-      border-color: var(--color-primary);
+      background-color: var(--color-light-gray);
     }
 
     &.no-hover {
       &:hover {
-        color: var(--color-primary);
-        border-color: var(--color-highlight);
         background-color: var(--color-highlight);
       }
     }

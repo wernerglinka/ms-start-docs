@@ -75,6 +75,10 @@ p {
     text-decoration: none;
     border-bottom: 1px dotted var(--color-highlight);
   }
+
+	code {
+		font-size: var(--font-size-sm);
+	}
 }
 
 dfn,
@@ -85,7 +89,10 @@ i {
 }
 
 blockquote {
-	margin: 0 1.5em;
+	margin: 0;
+	padding: 0.5rem 0.5rem 0.5rem 2rem;
+	border-left: var(--color-highlight) 0.5em solid;
+	background-color: #fafafa;
 }
 
 address {

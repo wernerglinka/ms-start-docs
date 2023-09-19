@@ -9,6 +9,10 @@
     
     {% include "page-sections/header.njk" %}
 
+    <div class="container">
+      <h1 class="page-title">{{ pageTitle }}</h1>
+    </div>
+
     <main id="js-docs-wrapper" class="doc-wrapper">
       {% include "doc-nav.njk" %}
       {% include "doc.njk" %}
@@ -34,4 +38,4 @@
     <script type="text/javascript" src="/assets/yaml.js"></script>
 
   </body>
-</html>
+</html> 

@@ -42,10 +42,23 @@ header {
   }
 }
 
+.sandbox-link {
+  position: relative;
+  top: 2.5rem;
+  margin-left: auto;
+  height: 5rem;
+}
+
+.sandbox-page .sandbox-link {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
 nav {
   position: relative;
-  top: 3rem;
-  margin-left: auto;
+  top: 2.5rem;
+  margin-left: 3rem;
   font-size: 1.4rem;
   font-weight: bold;
   overflow: hidden;
