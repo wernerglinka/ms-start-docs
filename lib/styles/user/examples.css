@@ -12,3 +12,25 @@
     }
   }
 }
+
+.example-text-background {
+  width: min(100%, var(--max-content-width));
+  margin: 0 auto 30rem;
+  display: flex;
+  justify-content: flex-end;
+
+  .section-inner {
+    margin: 0 5rem 0 0;
+    flex: 0 0 50%;
+    position: relative;
+    top: 15rem;
+    background-color: var(--color-white-translucent);
+    box-shadow: var(--box-shadow);
+
+    @media (max-width: 767px) {
+      flex: 0 0 90%;
+      margin: var(--content-margin);
+      top: 30rem;
+    }
+  }
+}

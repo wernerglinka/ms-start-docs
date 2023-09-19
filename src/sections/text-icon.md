@@ -28,7 +28,7 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and Icon Partials"
       prose: |-
-        A section component that renders an icon combined with a text area. The text area may be formatted with markdown.
+        A section component that renders an icon combined with a text area. The text area may be formatted with markdown. The icon location default is right, but may be reversed by setting the `isReverse` field to true.
   
   - container: "section"
     name: "text-icon"

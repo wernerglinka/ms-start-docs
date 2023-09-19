@@ -1,11 +1,11 @@
 --- 
 layout: "sections.njk"
 draft: false
-navLabel: "Text Audio"
-bodyClasses: "text-audio-section-page"
+navLabel: "Text Video"
+bodyClasses: "text-video-section-page"
 seo:
-  title: "Metalsmith Text Audio Section Documentation"
-  description: "Documentation for the text-audio section component, available with ms-start."
+  title: "Metalsmith Text Video Section Documentation"
+  description: "Documentation for the text-video section component, available with ms-start."
   socialImage: ""
   canonicalOverwrite: ""
 sections:
@@ -24,16 +24,16 @@ sections:
         isDark: false
     text:
       prefix: ""
-      title: "Text Audio Section"
+      title: "Text Video Section"
       header: "h1"
-      subtitle: "Media Section Composed from Text and Audio Partials"
+      subtitle: "Media Section Composed from Text and Video Partials"
       prose: |-
-        A section component that renders the controls for an audio source combined with a text area. The audio source may be either an mp3 or ogg file. The text area may be formatted with markdown. In addition, the audio player may have a thumbnail image. The audio player location default is right, but may be reversed by setting the `isReverse` field to true.
+        A section component that renders a video player with Thumbnail combined with a text area. The text area may be formatted with markdown. Video player location default is right, but may be reversed by setting the `isReverse` field to true.
 
-        Sound Effect by <a href="https://pixabay.com/users/kamhunt-27612606">Kammerin Hunt</a> from <a href="https://pixabay.com/sound-effects/">Pixabay</a>
+        Thumbnail is curtesy of unsplash.com.
   
   - container: section
-    name: text-audio
+    name: text-video
     containerFields:
       isDisabled: false
       isAnimated: false
@@ -47,28 +47,26 @@ sections:
         isDark: false
     isReverse: false
     hasCtas: false
-    hasImage: true
     text:
       prefix: the prefix
       title: the title
       header: h2
       subtitle: the subtitle
-      prose: |-
-        Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      prose: Cras mattis consectetur purus sit amet fermentum.
     ctas:
-      - url: ""
-        label: ""
-        isExternal: true
-        isButton: true
-        buttonStyle: primary
-    audio:
-      ogg: ""
-      mpeg: "/assets/acoustic-guitar-loop-f-91bpm-132687.mp3"
-    image:
-      src: https://source.unsplash.com/random/800x600
-      alt: ""
-      caption: ""
-
+      url: ""
+      label: ""
+      isExternal: true
+      isButton: true
+      buttonStyle: primary
+    video:
+      title: ""
+      inline: true
+      src: ""
+      id: yC_j_dzkaVE
+      tn: https://source.unsplash.com/random/800x600
+      start: ""
+      end: ""
 
 
   - container: "section"
@@ -92,7 +90,7 @@ sections:
       prose: |-
         ```yaml
           - container: section
-            name: text-audio
+            name: text-video
             containerFields:
               isDisabled: false
               isAnimated: false
@@ -106,27 +104,26 @@ sections:
                 isDark: false
             isReverse: false
             hasCtas: false
-            hasImage: true
             text:
               prefix: the prefix
               title: the title
               header: h2
               subtitle: the subtitle
-              prose: |-
-                Donec id elit non mi porta gravida at eget metus. Praesent ...
+              prose: Cras mattis consectetur purus sit amet fermentum.
             ctas:
               url: ""
               label: ""
               isExternal: true
               isButton: true
               buttonStyle: primary
-            audio:
-              ogg: ""
-              mpeg: "/assets/acoustic-guitar-loop-f-91bpm-132687.mp3"
-            image:
-              src: https://source.unsplash.com/random/800x600
-              alt: ""
-              caption: ""
+            video:
+              title: ""
+              inline: true
+              src: ""
+              id: yC_j_dzkaVE
+              tn: https://source.unsplash.com/random/800x600
+              start: ""
+              end: ""
         ```
 
 ---

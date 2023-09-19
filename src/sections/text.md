@@ -185,6 +185,89 @@ sections:
           }
         }
         ```
+
+        In the next example we will construct a text section with a background image and a transparent text area.
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: false
+        isButton: true
+        buttonStyle: ""
+
+  - container: "section"
+    name: "text"
+    containerFields:
+      isDisabled: false
+      isAnimated: false
+      containerId: ""
+      containerClass: "example-text-background"
+      inContainer: true
+      isNarrow: true
+      background:
+        color: ""
+        image: "/assets/images/winter-landscape-2571788_1280.jpg"
+        isDark: false
+    text:
+      prefix: ""
+      title: "The good thing about cold weather for trees"
+      header: "h2"
+      subtitle: ""
+      prose: |-
+        The last few weeks in January are always some of the coldest in Minnesota. While we are hunkered inside staying warm, trees do not have the benefit of escaping the cold.
+
+        Deciduous trees in Minnesota, such as maples and oaks, adapt to the winter by dropping their leaves in the fall. Conifers like spruces and firs retain their needles and can continue to photosynthesize over the winter to help them survive. 
+    hasCtas: true
+    ctas:
+      - url: "https://extension.umn.edu/natural-resources-news/good-thing-about-cold-weather-trees"
+        label: "Learn more"
+        isExternal: true
+        isButton: false
+        buttonStyle: ""
+
+  - container: "section"
+    name: "text"
+    containerFields:
+      isDisabled: false
+      isAnimated: false
+      containerId: ""
+      containerClass: ""
+      inContainer: true
+      isNarrow: true
+      background:
+        color: ""
+        image: ""
+        isDark: false
+    text:
+      prefix: ""
+      title: ""
+      header: "h2"
+      subtitle: ""
+      prose: |-
+        This was achieved by adding the class `example-text-background` to `containerClass` and the following styling.
+        ```css
+        .example-text-background {
+          width: min(100%, var(--max-content-width));
+          margin: 0 auto 30rem;
+          display: flex;
+          justify-content: flex-end;
+
+          .section-inner {
+            margin: 0 5rem 0 0;
+            flex: 0 0 50%;
+            position: relative;
+            top: 15rem;
+            background-color: var(--color-white-translucent);
+            box-shadow: var(--box-shadow);
+
+            @media (max-width: 767px) {
+              flex: 0 0 90%;
+              margin: var(--content-margin);
+              top: 30rem;
+            }
+          }
+        }
+        ```
     hasCtas: false
     ctas:
       - url: ""

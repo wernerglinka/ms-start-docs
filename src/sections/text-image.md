@@ -1,11 +1,11 @@
 --- 
 layout: "sections.njk"
 draft: false
-navLabel: "Image"
-bodyClasses: "image-section-page"
+navLabel: "Text Image"
+bodyClasses: "text-image-section-page"
 seo:
-  title: "Metalsmith Image Section Documentation"
-  description: "Documentation for the image section component, available with ms-start."
+  title: "Metalsmith Text Image Section Documentation"
+  description: "Documentation for the text-image section component, available with ms-start."
   socialImage: ""
   canonicalOverwrite: ""
 sections:
@@ -24,33 +24,45 @@ sections:
         isDark: false
     text:
       prefix: ""
-      title: "Image Section"
+      title: "Text Image Section"
       header: "h1"
-      subtitle: "Simple Image Display"
+      subtitle: "Media Section Composed from Text and Image Partials"
       prose: |-
-        A section component that renders an image with an optional caption. 
-        
-        Image is curtesy of unsplash.com.
+        A section component that renders an image combined with a text area. The text area may be formatted with markdown. Image location default is right, but may be reversed by setting the `isReverse` field to true.
 
+        Image is curtesy of unsplash.com.
+  
   - container: section
-    name: image
+    name: text-image
     containerFields:
       isDisabled: false
       isAnimated: false
       containerId: ""
       containerClass: ""
       inContainer: true
-      isNarrow: true
+      isNarrow: false
       background:
         color: ""
         image: ""
         isDark: false
+    isReverse: true
+    hasCtas: true
+    text:
+      prefix: the prefix
+      title: the title
+      header: h2
+      subtitle: the subtitle
+      prose: Cras mattis consectetur purus sit amet fermentum.
+    ctas:
+      - url: "/sandbox/"
+        label: "Checkout the Sandbox"
+        isExternal: false
+        isButton: true
+        buttonStyle: ""
     image:
       src: https://source.unsplash.com/random/800x600
-      alt: my alt text
-      caption: "And a caption, right here!"
-
-
+      alt: ""
+      caption: ""
 
   - container: "section"
     name: "text"
@@ -73,21 +85,35 @@ sections:
       prose: |-
         ```yaml
           - container: section
-            name: image
+            name: text-image
             containerFields:
               isDisabled: false
               isAnimated: false
               containerId: ""
               containerClass: ""
               inContainer: true
-              isNarrow: true
+              isNarrow: false
               background:
                 color: ""
                 image: ""
                 isDark: false
+            isReverse: true
+            hasCtas: true
+            text:
+              prefix: the prefix
+              title: the title
+              header: h2
+              subtitle: the subtitle
+              prose: Cras mattis consectetur purus sit amet fermentum.
+            ctas:
+              - url: "/sandbox/"
+                label: "Checkout the Sandbox"
+                isExternal: false
+                isButton: true
+                buttonStyle: ""
             image:
               src: https://source.unsplash.com/random/800x600
-              alt: my alt text
+              alt: ""
               caption: ""
         ```
 
