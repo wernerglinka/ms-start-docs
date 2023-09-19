@@ -4,6 +4,8 @@
   position: relative;
 
   & .audio-image {
+    min-height: 30rem;
+    
     & img {
       display: block;
       width: 100%;

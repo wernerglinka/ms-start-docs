@@ -56,17 +56,15 @@
     caption: ""
 #}
 
-
-
 <div class="text-media-wrapper section-inner {% if params.isReverse %}is-reverse{% endif %}">
-  
-  {% include "sections/particles/text.njk" %}
 
-  {% include "sections/particles/ctas.njk" %}
+  {% include "page-sections/particles/text.njk" %}
+
+  {% include "page-sections/particles/ctas.njk" %}
   
   <div class="audio">
     {% if params.hasImage %}
-      <div class="audio-image">
+      <div class="background-image">
         <img src="{{ params.image.src }}" alt="{{ params.image.alt }}">
       </div><!-- /.audio-image -->
     {% endif %}

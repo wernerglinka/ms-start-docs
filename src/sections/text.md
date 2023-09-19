@@ -108,11 +108,11 @@ sections:
         isDark: false
     text:
       prefix: ""
-      title: "Examples"
+      title: "Example"
       header: "h2"
       subtitle: ""
       prose: |-
-        In this example the text section is used as a primary Call To Action banner.
+        In this example the text section is used as a primary Call To Action banner. The banner spans the full page width and a background image is used with the text set to light. The CTA link is selected to be a button with default styling.
     hasCtas: false
     ctas:
       - url: ""
@@ -141,11 +141,55 @@ sections:
       subtitle: "Find out more about how this all works"
       prose: |-
         This amazing background image is by Dan Fador from Pixabay.
+    hasCtas: true
+    ctas:
+      - url: "/sandbox/"
+        label: "Go to the Sandbox"
+        isExternal: false
+        isButton: true
+        buttonStyle: ""
+
+  - container: "section"
+    name: "text"
+    containerFields:
+      isDisabled: false
+      isAnimated: false
+      containerId: ""
+      containerClass: ""
+      inContainer: true
+      isNarrow: true
+      background:
+        color: ""
+        image: ""
+        isDark: false
+    text:
+      prefix: ""
+      title: ""
+      header: "h2"
+      subtitle: ""
+      prose: |-
+        To fine-tune the banner apperance we added the class `example-cta-banner` to `containerClass` and the following styling was used to finish the CTA banner.
+        ```css
+        .example-cta-banner {
+          .section-inner {
+            text-align: center;
+            padding: 10rem 0;
+
+            .title {
+              margin-bottom: 0;
+            }
+
+            .ctas {
+              margin-top: 4rem;
+            }
+          }
+        }
+        ```
     hasCtas: false
     ctas:
       - url: ""
         label: ""
-        isExternal: true
+        isExternal: false
         isButton: true
         buttonStyle: ""
 ---

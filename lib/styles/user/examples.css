@@ -2,5 +2,13 @@
   .section-inner {
     text-align: center;
     padding: 10rem 0;
+
+    .title {
+      margin-bottom: 0;
+    }
+
+    .ctas {
+      margin-top: 4rem;
+    }
   }
 }

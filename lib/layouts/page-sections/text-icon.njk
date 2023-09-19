@@ -27,7 +27,7 @@
 
   YAML example:
   isReverse: false
-  hasCta: false
+  hasCtas: false
   text:
     prefix: ""
     title: ""
@@ -49,9 +49,9 @@
 
 <div class="text-media-wrapper section-inner {% if params.isReverse %}is-reverse{% endif %}">
   
-  {% include "sections/particles/text.njk" %}
+  {% include "page-sections/particles/text.njk" %}
 
-  {% include "sections/particles/ctas.njk" %}
+  {% include "page-sections/particles/ctas.njk" %}
   
   <div class="icon {% if params.icon.caption %}has-caption{% endif %}">
     {% include "../icons/" + params.icon.name + ".njk" ignore missing %}
