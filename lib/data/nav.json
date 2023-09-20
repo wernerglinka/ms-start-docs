@@ -1,5 +1,12 @@
 [
   {
+    "title": "Common Section Fields",
+    "url": "/sections/common"
+  },
+  {
+    "type": "divider"
+  },
+  {
     "title": "Audio",
     "url": "/sections/audio"
   },

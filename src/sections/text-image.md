@@ -28,9 +28,16 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and Image Partials"
       prose: |-
-        A section component that renders an image combined with a text area. The text area may be formatted with markdown. Image location default is right, but may be reversed by setting the `isReverse` field to true.
+        A versatile section component designed to seamlessly integrate images with textual content, offering a visually engaging and informative user experience. 
+        
+        Key features of this component include:
 
-        Image by unsplash.com.
+        **Image Integration:** The core functionality of this component revolves around the inclusion of images. You can effortlessly insert images into your content to illustrate concepts, convey messages, or enhance the visual appeal of your web pages.
+
+        **Text Area with Markdown:** Accompanying the image is a text area that fully supports Markdown formatting. This feature allows you to provide comprehensive explanations, descriptions, or context related to the image or the content surrounding it. Markdown's flexibility enables you to format and style text for maximum clarity and engagement.
+
+        **Layout Flexibility:** By default, the image is positioned on the left side of the text area, creating a visually pleasing flow. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
+    
   
   - container: section
     name: text-image
@@ -62,7 +69,7 @@ sections:
     image:
       src: https://source.unsplash.com/random/800x600
       alt: ""
-      caption: ""
+      caption: "Image by unsplash.com."
 
   - container: "section"
     name: "text"
@@ -114,7 +121,7 @@ sections:
             image:
               src: https://source.unsplash.com/random/800x600
               alt: ""
-              caption: ""
+              caption: "Image by unsplash.com."
         ```
 
 ---

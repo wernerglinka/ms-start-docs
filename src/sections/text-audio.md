@@ -28,7 +28,17 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and Audio Partials"
       prose: |-
-        A section component that renders the controls for an audio source combined with a text area. The audio source may be either an mp3 or ogg file. The text area may be formatted with markdown. In addition, the audio player may have a thumbnail image. The audio player location default is right, but may be reversed by setting the `isReverse` field to true.
+        A dynamic and feature-rich section component that seamlessly combines audio controls, text content, and optional thumbnail images for an engaging and informative user experience. This component is designed to provide a comprehensive multimedia presentation on your website, offering flexibility and customization to suit your content needs.
+
+        Here are the key features and functionalities of this component:
+
+        **Audio Controls:** The core function of this component is to render audio controls for a seamless listening experience. It supports audio sources in both `mp3` and `ogg` formats, ensuring compatibility with a wide range of audio files and browsers. Users can easily play, pause and adjust volume.
+
+        **Text Area with Markdown:** Accompanying the audio player is a text area that allows you to present content formatted with Markdown. This feature gives you the freedom to provide context, descriptions, or additional information related to the audio content. Markdown's flexibility enables you to style and structure text for optimal readability and engagement.
+
+        **3Optional Thumbnail Image:** Enhance your multimedia presentation by including an optional thumbnail image associated with the audio player. This image adds visual appeal and context to the audio content, making it more engaging and informative.
+
+        **Layout Flexibility:** By default, the audio player is positioned on the left side of the text area. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
 
         Sound Effect by <a href="https://pixabay.com/users/kamhunt-27612606">Kammerin Hunt</a> from <a href="https://pixabay.com/sound-effects/">Pixabay</a>
   

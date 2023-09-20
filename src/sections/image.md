@@ -28,9 +28,13 @@ sections:
       header: "h1"
       subtitle: "Simple Image Display"
       prose: |-
-        A section component that renders an image with an optional caption. 
-        
-        Image by unsplash.com.
+        A section component to render an image, accompanied by an optional caption for added context.
+
+        Key features of this image section component include:
+
+        **Image Display:** The core functionality of this component is centered around displaying images in an aesthetically pleasing manner. Whether you want to showcase photographs, illustrations, or any visual content, this component ensures your images take center stage.
+
+        **Optional Caption:** Enhance your images with context or descriptions by utilizing the optional caption feature. This allows you to provide additional information, context, or storytelling alongside your visuals, making your content more informative and engaging.
 
   - container: section
     name: image
@@ -48,7 +52,7 @@ sections:
     image:
       src: https://source.unsplash.com/random/800x600
       alt: my alt text
-      caption: "And a caption, right here!"
+      caption: "Image by unsplash.com."
 
 
 

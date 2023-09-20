@@ -28,7 +28,15 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and lottie Partials"
       prose: |-
-        A section component that renders a lottie animation combined with a text area. The text area may be formatted with markdown. The lottie location default is right, but may be reversed by setting the `isReverse` field to true.
+        A versatile section component designed to seamlessly integrate Lottie animations with textual content, delivering an engaging and informative user experience.
+
+        Key features of this component include:
+
+        **Lottie Animation Integration:** The core functionality of this component revolves around the inclusion of Lottie animations. You can effortlessly embed Lottie animations into your content to add motion, interactivity, and visual appeal.
+
+        **Text Area with Markdown:** Accompanying the Lottie animation is a text area that fully supports Markdown formatting. This feature allows you to provide detailed explanations, descriptions, or context related to the animation or the content surrounding it. Markdown's flexibility enables you to format and style text for maximum clarity and engagement.
+
+        **Layout Flexibility:** By default, the Lottie animation is positioned on the left side of the text area, creating an engaging visual flow. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
 
         Lottie animation by [lottiefiles.com](https://lottiefiles.com/)
   

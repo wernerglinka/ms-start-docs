@@ -11,9 +11,13 @@
         <a class="button-link primary no-hover">Select a Section</a>
         <ul class="section-select">
           {% for item in nav %}
+            {% if item.type === "divider" %}
+            <li class="divider"></li>
+            {% else %}  
             <li class="nav-item">
               <a href="{{ item.url }}">{{ item.title }}</a>
             </li>
+          {% endif %}
           {% endfor %}
         </ul>
     </div>

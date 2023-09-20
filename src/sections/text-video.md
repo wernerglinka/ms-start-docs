@@ -28,7 +28,17 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and Video Partials"
       prose: |-
-        A section component that renders a video player with Thumbnail combined with a text area. The text area may be formatted with markdown. Video player location default is right, but may be reversed by setting the `isReverse` field to true.
+        A versatile section component designed to seamlessly integrate a video player with a thumbnail image and textual content, delivering an engaging and informative user experience.
+
+        Key features of this component include:
+
+        **Video Player Integration:** The core functionality of this component revolves around the inclusion of a video player. You can effortlessly embed video content into your web pages. The video may be played inline or in a modal window, depending on your requirements.
+
+        **Thumbnail Image:** Accompanying the video player is a thumbnail image. This image serves as a visual preview, enticing users to interact with the video content.
+
+        **Text Area with Markdown:** Additionally, this component features a text area that fully supports Markdown formatting. This allows you to provide comprehensive explanations, descriptions, or context related to the video or the content surrounding it. Markdown's flexibility enables you to format and style text for maximum clarity and engagement.
+
+        **Layout Flexibility:** By default, the video player is positioned on the left side of the text area. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
 
         Thumbnail by unsplash.com.
   

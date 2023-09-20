@@ -28,9 +28,11 @@ sections:
       header: "h1"
       subtitle: "Simple Icon Display"
       prose: |-
-        A section component that renders an icon. Feather icons are included with [ms-start](https://github.com/wernerglinka/ms-start) as Nunjucks files that are then inlcuded in the build process. You can find the full list of icons at [feathericons.com](https://feathericons.com/). The icon section is a simple way to display an icon with a title and subtitle.
+        A section component to render icons on your website. This component draws on a library of Feather icons, pre-loaded in the Metalsmith First starter, packaged as Nunjucks files. These icons are seamlessly integrated into the build process. The complete catalog of available icons can be explored on [feathericons.com](https://feathericons.com/), giving you a wide range of choices to suit your design needs.
 
-        Other icons can easily be added to the build process by adding them to the `lib/layouts/icons` directory and changing the file extension from `svg` to `njk`. The icon section will then be able to render the icon.
+        The icon section offers a straightforward and effective way to display icons, along with an optional caption.
+
+        And you're not limited to the built-in icons. You have the flexibility to expand your icon library simply by adding new icons to the `lib/layouts/icons` directory. Just make sure to change the file extension from `svg` to `njk`. Once this is done, the icon section will seamlessly recognize and render these new icons, providing you with even more creative freedom and customization options for your projects.
 
   - container: section
     name: icon

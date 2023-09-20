@@ -28,7 +28,15 @@ sections:
       header: "h1"
       subtitle: "Media Section Composed from Text and Icon Partials"
       prose: |-
-        A section component that renders an icon combined with a text area. The text area may be formatted with markdown. The icon location default is right, but may be reversed by setting the `isReverse` field to true.
+        A versatile section component designed to seamlessly blend icons with textual content. This component provides the flexibility to create visually captivating and context-rich sections on your website.
+
+        Key features of this component include:
+
+        **Icon Integration:** The core functionality of this component revolves around the inclusion of icons. You can easily insert icons into your content to convey messages, emphasize points, or add visual interest.
+
+        **Text Area with Markdown:** Accompanying the icon is a text area that supports Markdown formatting. This allows you to provide detailed explanations, descriptions, or context related to the icon or the content around it. Markdown's versatility enables you to format and style text for maximum clarity and engagement.
+
+        **Layout Flexibility:** By default, the icon is positioned on the left side of the text area. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
   
   - container: "section"
     name: "text-icon"

@@ -48,12 +48,14 @@ sections:
       header: "h1"
       subtitle: ""
       prose: |-
-        Metalsmith First uses a modular approach to building websites. Rather than relying on frontmatter solely for defining page configurations, frontmatter  is used to construct entire pages with reusable section components. This distinctive approach, often called "section-based design," offers the flexibility to employ the same component across various pages.
+        **Metalsmith First** is a starting point for working with Metalsmith, offering a modular approach for constructing websites. Instead of relying solely on frontmatter to define page configurations, we leverage frontmatter to create entire pages by assembling reusable section components.
 
-        This web site serves as a documentation for all the section components available with Metalsmith First. Each section component has its own page with a detailed description of its purpose and usage. On its page, the section is shown in its default state. **A [sandbox](/sandbox) is available** in which each component's properties  can be manipulated, so you can see how it looks and behaves in the browser.
+        **Ms Start** is a command-line tool (CLI) designed for quickly setting up a Metalsmith First project. This user-friendly tool streamlines the process of creating a new project by providing all the necessary files and folders. It even enables you to effortlessly integrate new sections into your project.
 
-        > Site pages are responsive but have a minimum width of 767px and are best viewed on a desktop or laptop.
+        This website serves as comprehensive documentation for all the section components available within Ms Start. Each section component is given its own dedicated page, complete with an in-depth explanation of its purpose and practical usage. These pages showcase the section in its default state, but we've gone a step further. We've made a [sandbox](/sandbox) accessible, allowing you to interactively tweak each component's properties. This means you can visualize and experiment with how each component looks and behaves in a real-time browser environment.
 
-        All sections share a commen set of properties called containerFields. By using these fields, a section can be customized to fit your needs. The section can be disabled, animated, and given a unique id and class. The section can be placed in a container, which can be set to be narrow or a maximum width. The section can also be given a background color or image, and the text can be set to be dark or light. please use the sandbox to explore these properties. Also, examples on the individual section pages show how these properties can be used.
+        > It's worth noting that our site pages are responsive, but they have a minimum width requirement of 767px, making them best suited for viewing on a desktop or laptop.
+
+        All sections share a common set of properties known as `containerFields`. These fields grant you the power to tailor a section to your specific requirements. You can easily disable a section, apply animations, assign unique IDs and classes, place the section within a container (which can be configured to be narrow or maximum width), set background colors or images, and adjust text to be either dark or light. We encourage you to explore these properties using the sandbox. Additionally, some individual section pages offer practical examples demonstrating how these properties can be effectively utilized.
 
 ---

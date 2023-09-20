@@ -28,7 +28,13 @@ sections:
       header: "h1"
       subtitle: "Simple Audio Player"
       prose: |-
-        A section component that renders the controls for an audio source. The component plays audio formats `mpg3` and `ogg`.
+        A section component to render audio controls for a seamless playback experience. It supports audio formats in both `mp3` and `ogg`, ensuring compatibility with a wide range of audio sources and browsers.
+
+        With this component, you have the power to:
+
+        **Play and Control Audio:** The primary function of this component is to provide intuitive audio controls. Visitors to your website can easily play, pause and adjust the volume, creating an engaging and interactive audio experience.
+
+        **Multiple Audio Formats:** This component ensures broad compatibility by supporting two popular audio formats: mp3 and ogg. This versatility allows you to include audio content that caters to different user preferences and browser capabilities.
 
         Sound Effect by <a href="https://pixabay.com/users/kamhunt-27612606">Kammerin Hunt</a> from <a href="https://pixabay.com/sound-effects/">Pixabay</a>
   

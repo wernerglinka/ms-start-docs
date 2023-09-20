@@ -32,7 +32,7 @@
   --color-light-gray: #f6f6f6;
   --color-gray: #e5e5e5;
   --color-black: #000;
-  --color-link: #932432;
+  --color-link: #808ae2;
   --color-link-hover: #de354c;
 
   --color-very-dark-translucent: rgba(0, 0, 0, 0.9);
@@ -42,6 +42,9 @@
 
   --text-shadow: 0px 0px 4px rgba(128, 0, 0, 0.5);
   --box-shadow: 0px 0px 5.3px rgba(0, 0, 0, 0.028), 0px 0px 17.9px rgba(0, 0, 0, 0.042), 0px 0px 80px rgba(0, 0, 0, 0.07); 
+
+  --caption-color: var(--color-tertiary);
+  --caption-background: var(--color-white-translucent);
 
   /**
     * Typography

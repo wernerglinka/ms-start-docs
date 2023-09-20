@@ -28,7 +28,9 @@ sections:
       header: "h1"
       subtitle: "Simple Text Display"
       prose: |-
-        A section component that renders a prefix, title, subtitle, body text and optional links. The body text, prose, can be formatted with markdown and the links may be styled as either a simple text link or a button. By using the section containerFields, this section can solve several requirements. For example the home page of this site uses this section as a page banner, displaying the site title and a subtitle with a background image and the text being set to light.
+        This section component serves as a versatile text rendering tool, capable of displaying a prefix, title, subtitle, body text, and optional links. Notably, the body text can be conveniently formatted using Markdown. Furthermore, you have the flexibility to style the links either as straightforward text links or as buttons, adding a touch of customization to your content.
+
+        Thanks to the section's `containerFields`, it offers an elegant solution to address various requirements. To illustrate, consider the homepage of this website, where this section seamlessly serves as a page banner. Here, it shows the site title and a subtitle against a captivating background image. Moreover, the text is set to a light color scheme, enhancing the overall visual appeal.
     hasCtas: false
     ctas:
       - url: ""
@@ -76,7 +78,7 @@ sections:
               header: "h1"
               subtitle: "Simple Text Display"
               prose: |-
-                A section component that renders a prefix, title, subtitle and a body text. The body text, prose,  can be formatted with markdown.
+                This section component serves as a versatile text rendering tool...
             hasCtas: false
             ctas:
               - url: ""
@@ -108,11 +110,22 @@ sections:
         isDark: false
     text:
       prefix: ""
-      title: "Example"
+      title: "Examples"
       header: "h2"
       subtitle: ""
       prose: |-
-        In this example the text section is used as a primary Call To Action banner. The banner spans the full page width and a background image is used with the text set to light. The CTA link is selected to be a button with default styling.
+        In this particular instance, the text section serves as a primary Call To Action (CTA) banner. This banner is designed to command attention and encourage user interaction. Here's how it's configured:
+
+        - **Full Page Width:** The banner spans the entire width of the page, creating a visually striking and prominent presence. This full-width approach ensures that your CTA is immediately noticeable.
+
+        - **Background Image:** To enhance the visual impact, a carefully chosen background image is employed. This image adds depth, context, and a touch of personality to the banner, making it more engaging and visually appealing.
+
+        - **Light Text:** To maintain readability and ensure a harmonious visual balance, the text within the banner is set to a light color scheme. This not only complements the background image but also ensures that the message is clear and legible.
+
+        - **CTA Button:** The Call To Action is prominently highlighted through the use of a button. This button is creating a visually distinct element that draws the user's attention. Its purpose is to encourage users to take a specific action, such as clicking through to learn more, make a purchase, or engage with your content.
+
+        By employing these design and layout choices, this CTA banner effectively captures user attention, conveys a message, and guides them toward the desired action. It's a strategic and visually appealing element that contributes to your website's overall effectiveness in engaging and converting visitors.
+
     hasCtas: false
     ctas:
       - url: ""
@@ -186,7 +199,16 @@ sections:
         }
         ```
 
-        In the next example we will construct a text section with a background image and a transparent text area.
+        In this next example, we'll create a visually captivating text section that features a background image and a "floating" text area. This combination of elements adds a sense of depth and dynamism to your web page, creating an engaging and memorable user experience.
+
+        Here's how it's crafted:
+
+        - **Background Image:** The section starts with a carefully chosen background image. This image serves as a backdrop, setting the overall tone and context for the content. It can be an eye-catching visual, a scenic landscape, or an image that complements the text of the section.
+
+        - **Floating Text Area:** Positioned on top of the background image is a "floating" text area. This text area appears to hover or float over the image, creating a visually distinct and attention-grabbing effect. It's an excellent way to draw focus to specific content.
+
+        By combining these elements, you create a compelling visual hierarchy that guides the user's attention to the floating text area. This technique not only adds aesthetic appeal but also helps convey important information or engage users with your content. It's a creative way to make this section stand out.
+
     hasCtas: false
     ctas:
       - url: ""
