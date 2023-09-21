@@ -33,8 +33,8 @@ function precompileNunjucksTemplates(options) {
     const start = Date.now();
 
     // get templates directory
-    const templatesDir = path.join(metalsmith._directory, options.templatesDir);
-    const targetDir = path.join(metalsmith._directory, options.destDir);
+    const templatesDir = path.join(metalsmith.directory(), options.templatesDir);
+    const targetDir = path.join(metalsmith.directory(), options.destDir);
 
     const precompileOpts = {
       include: [/.*\.njk/]

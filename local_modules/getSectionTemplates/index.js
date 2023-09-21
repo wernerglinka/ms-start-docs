@@ -31,7 +31,7 @@ function getSectionTemplates(options) {
     const start = Date.now();
 
     // get templates directory
-    const templatesDir = path.join(metalsmith._directory, options.templatesDir);
+    const templatesDir = path.join(metalsmith.directory(), options.templatesDir);
 
     // get all files in the templates directory
     const filesInTemplatesDir = fs.readdirSync(templatesDir);
