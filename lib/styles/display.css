@@ -155,6 +155,23 @@
         }
       }
     }
+
+    .add-selection {
+      height: 4rem;
+      width: 4rem;
+      border: 2px solid var(--color-highlight);
+      background-color: var(--color-highlight);
+      color: var(--color-primary);
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+
+      &:hover {
+        background-color: var(--color-light-gray);
+      }
+    }
   }
 }
 

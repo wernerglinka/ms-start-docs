@@ -1,0 +1,259 @@
+.list-wrapper {
+  
+  /**
+    * Base styles for a Logos List
+    */
+  .logos-list-display {
+    position: relative;
+
+    .marquee {
+      width: var(--list-width);
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+    
+    .logos-wrapper {
+      width: fit-content;
+      display: flex;
+      position: relative;
+      transform: translate3d(0%, 0, 0);
+      animation: marquee 10s linear infinite;
+      animation-play-state: running;
+    }
+    
+    .marquee:hover .logos-wrapper {
+      animation-play-state: paused;
+      transition-duration: 0.8s;
+    }
+
+    .logos-wrapper.no-animation {
+      animation: none !important;
+    }
+    
+    .logos {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      width: var(--list-width);
+    
+      li {
+        display: flex;
+        align-items: center;
+        width: var(--logo-width);
+        padding: 0 1rem;
+      }
+    
+      img {
+        max-width: var(--logo-width);
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: all 0.3s ease-in-out;
+    
+        &:hover {
+          filter: grayscale(0);
+          opacity: 1;
+        }
+      }
+    
+    }
+  }
+  
+  /**
+    * Base styles for a Cards List
+    */
+  .cards-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    li {
+      align-self: stretch;
+    }
+
+    .card {
+      position: relative;
+      border: 1px solid #f0f0f0;
+      padding: 2rem 2rem 5rem;
+      max-width: 30rem;
+      height: 100%;
+      display: grid;
+      row-gap: 1rem;
+      grid-template-rows: min-content min-content min-content min-content min-content 1fr;
+      grid-template-areas:
+        "media"
+        "title"
+        "prose"
+        "link";
+    }
+
+    & .title {
+      grid-area: title;
+      margin: 0 1rem 0 0;
+    } 
+    & .media {
+      grid-area: media;
+      width: 100%;
+      aspect-ratio: 1;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 80%;
+      }
+    }
+    & .prose {
+      grid-area: prose;
+      margin: 0 1rem 0 0;
+    }
+    & .link {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+    }
+  } 
+
+/**
+  * Base styles for a Flip Cards List
+  */
+  .flip-cards-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 50px 0;
+  
+    @media (max-width: 500px) {
+      padding: 30px 0;
+    }
+  
+    li {
+      width: 360px;
+      height: 290px;
+      padding: 10px;
+    }
+  
+    .flip-card-wrapper {
+      background-color: transparent;
+      height: 100%;
+      width: 100%;
+      perspective: 1000px;
+    }
+
+    img {
+      max-width: 80%;
+    }
+  
+    .flip-card,
+    .flip-card-back  {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      width: 100%;
+      border: 1px solid #f0f0f0;
+      padding: 30px 40px;
+      color: #fff;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  
+      @media (max-width: 500px) {
+        padding: 20px;
+      }
+  
+      h3 {
+        font-size: 22px;
+      }
+  
+      p {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+  
+    .flip-card-back {
+      p {
+        color: #000;
+      }
+    }
+  
+    .flip-card-wrapper:hover .flip-card {
+      transform: rotateY(180deg);
+    }
+  
+    .flip-card, 
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+  
+    .flip-card-back {
+      background-color: $color-secondary;
+      transform: rotateY(180deg);
+    }
+  
+    .flip-card-wrapper:hover .flip-card-back {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+/**
+  * Base styles for a grid
+  */
+  .grid-list {
+    max-width: 31rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.4rem;
+
+    li {
+      border: 1px solid #f0f0f0;
+      aspect-ratio: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #f8f8f8;
+      }
+
+      &.no-link:hover {
+        background-color: transparent;
+      }
+
+      img {
+        width: 3rem;
+        height: 3rem;
+
+      }
+    }
+
+  }
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

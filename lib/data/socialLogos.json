@@ -1,0 +1,66 @@
+[
+  {
+    "id": "linkedin",
+    "title": "LinkedIn",
+    "url": "https://www.linkedin.com/",
+    "image": "/assets/socialLogos/linkedin.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "dribble",
+    "title": "Dribble",
+    "url": "https://dribbble.com/",
+    "image": "/assets/socialLogos/dribble.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  
+  {
+    "id": "instagram",
+    "title": "Instagram",
+    "url": "https://www.instagram.com/",
+    "image": "/assets/socialLogos/instagram.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "twitter",
+    "title": "Twitter",
+    "url": "https://www.twitter.com/",
+    "image": "/assets/socialLogos/twitter.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "facebook",
+    "title": "Facebook",
+    "url": "https://www.facebook.com/",
+    "image": "/assets/socialLogos/facebook.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "youtube",
+    "title": "YouTube",
+    "url": "https://www.youtube.com/",
+    "image": "/assets/socialLogos/youtube.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "github",
+    "title": "GitHub",
+    "url": "https://www.github.com/",
+    "image": "/assets/socialLogos/github.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "vimeo",
+    "title": "Vimeo",
+    "url": "https://www.vimeo.com/",
+    "image": "/assets/socialLogos/vimeo.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "pinterest",
+    "title": "Pinterest",
+    "url": "https://www.pinterest.com/",
+    "image": "/assets/socialLogos/pinterest.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  }
+]

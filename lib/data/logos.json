@@ -1,0 +1,79 @@
+[
+  {
+    "id": "moma",
+    "title": "MoMa",
+    "url": "https://moma.org",
+    "image": "/assets/logos/moma.svg",
+    "description": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "sfmoma",
+    "title": "SF MoMa",
+    "url": "https://sfmoma.org",
+    "image": "/assets/logos/sfmoma.svg",
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum."
+  },
+  {
+    "id": "baseballhall",
+    "title": "Baseball Hall of Fame",
+    "url": "https://baseballhall.org/",
+    "image": "/assets/logos/national-baseball-hall-of-fame-and-museum.svg",
+    "description": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper."
+  },
+  {
+    "id": "science-museumn-of-minnesota",
+    "title": "Science Museumn of Minnesota",
+    "url": "https://www.smm.org/",
+    "image": "/assets/logos/science-museum-of-minnesota.svg",
+    "description": "Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+  },
+  {
+    "id": "san-miguel-cerveza",
+    "title": "San Miguel Cerveza",
+    "url": "https://www.sanmiguel.com.ph/",
+    "image": "/assets/logos/san-miguel-cerveza.svg",
+    "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur."
+  },
+  {
+    "id": "warsteiner",
+    "title": "Warsteiner",
+    "url": "https://www.warsteiner.com/",
+    "image": "/assets/logos/warsteiner.svg",
+    "description": "Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum."
+  },
+  {
+    "id": "veltins",
+    "title": "Veltins",
+    "url": "https://www.veltins.de/",
+    "image": "/assets/logos/veltins.svg",
+    "description": "Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo."
+  },
+  {
+    "id": "dab",
+    "title": "DAB",
+    "url": "https://www.dab.de/",
+    "image": "/assets/logos/dab.svg",
+    "description": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cras mattis consectetur purus sit amet fermentum."
+  },
+  { 
+    "id": "guiness",
+    "title": "Guiness",
+    "url": "https://www.guinness.com/",
+    "image": "/assets/logos/guinness.svg",
+    "description": "Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit."
+  },
+  {
+    "id": "heineken",
+    "title": "Heineken",
+    "url": "https://www.heineken.com/",
+    "image": "/assets/logos/heineken.svg",
+    "description": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna."
+  },
+  {
+    "id": "jagermeister",
+    "title": "Jägermeister",
+    "url": "https://www.jagermeister.com/",
+    "image": "/assets/logos/jagermeister.svg",
+    "description": "Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur."
+  }
+]

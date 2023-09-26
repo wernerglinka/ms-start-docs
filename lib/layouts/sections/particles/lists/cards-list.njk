@@ -1,0 +1,9 @@
+{% from "sections/particles/card.njk" import card %}
+
+<ul class="cards-list">
+  {% for select in selection %}
+    <li>
+      {{ card(select) }}
+    </li>
+  {% endfor %}
+</ul>

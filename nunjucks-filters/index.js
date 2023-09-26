@@ -23,11 +23,11 @@ const mdToHTML = mdString => {
   }
 };
 
-const filterList = (list, selections) => {
+const getSelections = (list, selections) => {
   const filterredList = [];
   for (let i = 0; i < list.length; i++) {
     for (let j = 0; j < selections.length; j++) {
-      if (list[i].item === selections[j].item) {
+      if (list[i].id === selections[j].id) {
         filterredList.push(list[i]);
       }
     }
@@ -73,7 +73,7 @@ module.exports = {
   blogDate,
   trimSlashes,
   mdToHTML,
-  filterList,
+  getSelections,
   toArray,
   dump,
   isRelated

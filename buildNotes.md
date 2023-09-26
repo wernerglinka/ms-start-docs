@@ -16,8 +16,8 @@ All files that use Nunjuck's `include` statement need to be modified to be used 
 **To**
 ```njk
 <div class="text-wrapper section-inner">
-  {% include "particles/text.njk" %}
-  {% include "particles/ctas.njk" %}
+  {% include "sections/particles/text.njk" %}
+  {% include "sections/particles/ctas.njk" %}
 </div>
 ```
 
@@ -34,8 +34,8 @@ For icons the whole icons folder needed to be moved into the sections folder as 
 **To**
 ```njk
 <div class="icon-wrapper section-inner">
-  {% include "icons/" + params.icon.name + ".njk" ignore missing %}
-  <p class="caption">{{ params.icon.caption }}</p>
+  {% include "icons/" + section.icon.name + ".njk" ignore missing %}
+  <p class="caption">{{ section.icon.caption }}</p>
 </div>
 
 ```
@@ -45,3 +45,8 @@ The lottie player script was moved to 'layouts.njk'.
 ```html
 <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
 ```
+
+## Adding new sections
+
+- Add the new section layout files to `layouts/sections` and modify them to use the precompiled templates.
+- Add the original template files to `layputs/page-sections`.`
