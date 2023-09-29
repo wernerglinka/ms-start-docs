@@ -104,12 +104,8 @@
 
     {% include "sections/particles/ctas.njk" %}
     
-    <div class="lottie">
-    <script src='https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js'></script>
-    <div class="animation">
-      <lottie-player src="{{ section.lottie.src}}" background="transparent"  speed="1" loop autoplay></lottie-player>
-    </div>
-    <p class="caption">{{ section.caption }}</p>
+    {% include "sections/particles/lottie.njk" %}
+    
   </div>
 
   </div>

@@ -110,19 +110,7 @@
 
     {% include "sections/particles/ctas.njk" %}
     
-    <div class="audio">
-      {% if section.hasImage %}
-        <div class="audio-image">
-          <img src="{{ section.image.src }}" alt="{{ section.image.alt }}">
-        </div><!-- /.audio-image -->
-      {% endif %}
-
-      <audio controls>
-        <source src={{section.audio.ogg}} type="audio/ogg"/>
-        <source src={{section.audio.mpeg}} type="audio/mpeg"/>
-        Your browser does not support the audio element.
-      </audio>
-    </div><!-- /.audio -->
-
+    {% include "sections/particles/audio.njk" %}
+    
   </div>
 </{{section.container}}>

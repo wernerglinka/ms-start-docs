@@ -109,35 +109,6 @@
 
     {% include "sections/particles/ctas.njk" %}
 
-    {% if section.video.inline %}
-      <div class="video inline">
-        <div class="inline-video-wrapper js-inline-video-wrapper">
-          <div class="close">{% include "icons/x.njk" %}</div>
-          <div 
-            class="js-inline-video" 
-            data-videoid="{{ section.video.id }}" 
-            data-starttime="{{ section.video.start }}" 
-            data-endtime="{{ section.video.end }}"
-          ></div>
-        </div>
-      
-        <button class="video-trigger js-video-trigger">
-          <div class="play-button">{% include "icons/play.njk" %}</div>
-          <img src="{{ section.video.tn }}" alt="{{ section.video.title }}">
-        </button>
-      </div>
-    {% else %}
-      <div class="video" >
-        <button 
-          class="js-modal-video" 
-          data-videoid={{ section.video.id}} 
-          data-videosrc={{ section.video.src }}
-        >
-          <div class="play-button">{% include "icons/play.njk" %}</div>
-          <img src="{{ section.video.tn }}" alt="{{ section.video.title }}">
-        </button>
-      </div>
-    {% endif %}
-
+    {% include "sections/particles/video.njk" %}
   </div>
 </{{section.container}}>

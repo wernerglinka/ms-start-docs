@@ -66,7 +66,6 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="image-wrapper section-inner">
-    <img src="{{ section.image.src }}" alt="{{ section.image.alt }}" />
-    <p class="caption">{{ section.image.caption }}</p>
+    {% include "sections/particles/image.njk" %}
   </div>
 </{{section.container}}>
