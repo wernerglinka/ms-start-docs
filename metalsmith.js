@@ -28,7 +28,8 @@ let devServer = null;
  * Function dataToNunjucksGlobals
  * @returns {Object} An object of objects with the file name as the key and the file content as the value
  * 
- * This function will allow us to add metadata files to the build process programmatically.
+ * - allows to add metadata files to the build process programmatically.
+ * - allows access to these metadata in Nunjuck templates regardless of hierachy.
  */
 const dataToNunjucksGlobals = () => {
   const fs = require('fs');
