@@ -17,7 +17,5 @@
     margin: 0;
     width: 100%;
     padding: 0.5rem 1rem;
-    background-color: var(--caption-background);
-    color: var(--caption-color);
   }
 }

@@ -1,5 +1,8 @@
 .section-wrapper {
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
   .background-image {
     position: absolute;
@@ -32,6 +35,7 @@
     * {
       color: var(--color-white);
       text-shadow: var(--text-shadow);
+      stroke: var(--color-white);
     }
   }
 

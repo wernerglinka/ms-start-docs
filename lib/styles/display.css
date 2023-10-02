@@ -110,6 +110,10 @@
       border: 1px solid var(--color-white);
       padding: 2rem;
       margin: 2rem 0;
+
+      &.cta-fields {
+        padding-bottom: 4rem;
+      }
     }
     legend {
       font-size: 0.8em;
@@ -163,15 +167,22 @@
       }
     }
 
-    .selection-remove {
-      width: 2rem;
-      height: 2rem;
+    .remove-selection {
+      width: 3rem;
+      height: 3rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid var(--color-primary);
       cursor: pointer;
       position: absolute;
-      right: 2rem;
+      right: 1rem;
     }
 
-    .add-selection {position: relative;
+    .add-selection,
+    .add-cta {
+      position: relative;
       top: 2px;
       height: 4rem;
       width: 4rem;
@@ -187,6 +198,28 @@
       &:hover {
         background-color: var(--color-light-gray);
       }
+    }
+
+    .cta-fields-wrapper {
+      position: relative;
+      border: 1px solid var(--color-white);
+      margin-bottom: 1rem;
+
+      .remove-cta {
+        position: relative;
+        top: 3px;
+        left: -3rem;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--color-primary);
+      }
+    }
+    .add-cta {
+      top: 2rem;
     }
   }
 }
