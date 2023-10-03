@@ -106,11 +106,11 @@ Various helper functions are implemented to facilitate this mapping mechanism:
 
 ### Structure
 
+The code uses an event-driven approach. It listens to the form submission event to get the updated form values, then updates the section object, and then re-renders the section using Nunjucks. By using custom events and decoupling event listeners, the code is modular and easy to maintain. This event-driven approach ensures that different parts of the system remain decoupled and can be easily extended in the future.
+
 The code is wrapped inside an **Immediately Invoked Function Expression (IIFE)** to encapsulate logic and create a private scope. 
 
-The IIFE returns an object with the `init` method, which can be called externally.
-
-### Variable Declarations
+## Variable Declarations
 
 ```javascript
 let section = {};
@@ -120,24 +120,21 @@ let editor = null;
 
 - **`section`**: Represents the current section object.
 - **`env`**: Initializes the Nunjucks environment, setting it up with the configuration of `autoescape` set to true. This means Nunjucks will automatically escape output for safety.
-- **`editor`**: A placeholder for the CodeMirror instance (a code editor).
+- **`editor`**: A placeholder for the CodeMirror instance.
 
 ### Function Definitions
 
-1. **`getAdditionalStyles`**: Likely retrieves or processes additional styles, though the body isn't detailed.
-2. **`updatePropsDisplay`**: Updates the properties display, probably to reflect the current state of the `section` object.
-3. **`updateDeepObject`**: A helper function we previously discussed. It synchronizes the flat form values with the deep `section` object.
-4. **`watchPropsFormUpdateSectionDisplay`**: A key function that adds an event listener to the form for the properties (`props`). When the form is submitted:
-    - It collects all the data from the form and transforms it into an object.
-    - It identifies checkboxes that are unchecked (since they won't be in the FormData by default) and assigns them a value of `false`.
-    - It replaces any value of `"on"` with `true` (typically the default string value for checked checkboxes).
-    - Updates the `section` object.
-    - Renders the section using Nunjucks with the updated `section` object.
-    - Initializes various components based on the template (videos, lists, CTAs).
-
-5. **`getSection`**: Retrieves and renders a section based on the given template name.
-6. **`updateSection`**: Refreshes the display of the section in the viewport.
-7. **`init`**: The initialization function. Sets up the initial state and event listeners:
+1. **`getAdditionalStyles`**: Retrieves additional styles.
+2. **`updatePropsDisplay`**: Updates the properties display to reflect the current state of the `section` props object.
+3. **`updateDeepObject`**: A helper function that synchronizes the flat form values with the deep `section` object.
+4. **`dispatchYpdate`**: A helper function that processes the form data and dispatches a custom sectionUpdated event.
+5. **`handleFormSubmit`**: A function that handles the form submission, extracting form data, and calling dispatchUpdate
+6. **`initScripts`**: A function that initializes various scripts based on the template (videos, lists, CTAs).
+7. **`handleSectionUpdated`**: A function that handles the custom sectionUpdated event, updating the `section` object and re-rendering the section.
+8. **`getSectionContent`**: Retrieves and renders a section based on the given template name.
+9. **`initSection`**: Initializes the display of the section in the viewport.
+10. **`copyToClipboard`**: Copies the given text to the clipboard.
+11. **`init`**: The initialization function. Sets up the initial state and event listeners:
     - Sets the initial template.
     - Initializes the CodeMirror editor.
     - Adds click handlers to all templates.
@@ -153,7 +150,3 @@ For instance:
 - **Section Selection**: When a user clicks on a section template from the sidebar, the active section is updated, and its properties form is displayed.
 - **Code Editor**: A toggle mechanism shows or hides the CodeMirror code editor where additional styles can be edited.
 - **Clipboard Actions**: Several clipboard-related actions allow users to copy the current section's YAML configuration or additional styles directly to their clipboard.
-
-### Exports
-
-Finally, the module exports the `docs` object, which primarily exposes the `init` method, allowing external scripts or components to initialize the entire sandbox functionality.
