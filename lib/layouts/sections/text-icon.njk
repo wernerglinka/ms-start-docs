@@ -45,6 +45,10 @@
     caption: ''
 #}
 
+{% from "sections/particles/text.njk" import text %}
+{% from "sections/particles/ctas.njk" import ctas %}
+{% from "sections/particles/icon.njk" import icon %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -94,17 +98,8 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="text-media-wrapper section-inner {% if section.isReverse %}is-reverse{% endif %}">
-    
-    {% include "sections/particles/text.njk" %}
-
-    {% include "sections/particles/ctas.njk" %}
-    
-    <div class="icon">
-      <div class="icon-wrapper section-inner">
-        {% include "icons/" + section.icon.name + ".njk" ignore missing %}
-        <p class="caption">{{ section.icon.caption }}</p>
-      </div>
-    </div>
-
+    {{ text(section) }}
+    {{ ctas(section) }}
+    {{ icon(section) }}
   </div>
 </{{section.container}}>

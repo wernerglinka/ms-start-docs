@@ -49,7 +49,7 @@ sections:
         isDark: false
     icon:
       name: feather
-      caption: ""
+      caption: "The Feather icon"
 
 
   - container: "section"
@@ -87,7 +87,7 @@ sections:
                 isDark: false
             icon:
               name: feather
-              caption: ""
+              caption: "The Feather icon"
         ```
 
 ---

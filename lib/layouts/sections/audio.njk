@@ -13,6 +13,8 @@
       mpeg: ""
 #}
 
+{% from "sections/particles/audio.njk" import audio %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -62,6 +64,6 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="audio-wrapper section-inner">
-    {% include "sections/particles/audio.njk" %}
+    {{ audio(section) }}
   </div>
 </{{section.container}}>

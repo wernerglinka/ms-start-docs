@@ -16,6 +16,8 @@
     caption: ''
 #}
 
+{% from "sections/particles/icon.njk" import icon %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -64,7 +66,6 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="icon-wrapper section-inner">
-    {% include "icons/" + section.icon.name + ".njk" ignore missing %}
-    <p class="caption">{{ section.icon.caption }}</p>
+    {{ icon(section) }}
   </div>
 </{{section.container}}>

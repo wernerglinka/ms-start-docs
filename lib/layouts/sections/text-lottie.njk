@@ -50,6 +50,10 @@
       loop: true
 #}
 
+{% from "sections/particles/text.njk" import text %}
+{% from "sections/particles/lottie.njk" import lottie %}
+{% from "sections/particles/ctas.njk" import ctas %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -99,13 +103,9 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="text-media-wrapper section-inner {% if section.isReverse %}is-reverse{% endif %}">
-    
-    {% include "sections/particles/text.njk" %}
-
-    {% include "sections/particles/ctas.njk" %}
-    
-    {% include "sections/particles/lottie.njk" %}
-    
+    {{ text(section) }}
+    {{ ctas(section) }}
+    {{ lottie(section) }}
   </div>
 
   </div>

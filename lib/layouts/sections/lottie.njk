@@ -22,6 +22,8 @@
       loop: true
 #}
 
+{% from "sections/particles/lottie.njk" import lottie %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -70,6 +72,6 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="lottie-wrapper section-inner">
-    {% include "sections/particles/lottie.njk" %}
+    {{ lottie(section) }}
   </div>
 </{{section.container}}>

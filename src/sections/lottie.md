@@ -37,8 +37,6 @@ sections:
         **Easy Integration:** With this component, integrating Lottie animations into your website is a breeze. You can seamlessly embed animations that align with your content and messaging, creating visually stunning and immersive web experiences.
 
         Whether you're looking to add subtle motion effects or create dynamic storytelling elements, this Lottie animation section component empowers you to bring your web pages to life with fluid and captivating animations.
-        
-        Lottie animation by [lottiefiles.com](https://lottiefiles.com/)
 
   - container: section
     name: lottie
@@ -58,6 +56,7 @@ sections:
       control:
         autoplay: true
         loop: true
+      caption: "Lottie animation by lottiefiles.com"
 
   - container: "section"
     name: "text"
@@ -97,6 +96,7 @@ sections:
               control:
                 autoplay: true
                 loop: true
+              caption: "Lottie animation by lottiefiles.com"
         ```
 
 ---

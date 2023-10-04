@@ -1,3 +1,6 @@
+{% from "sections/particles/text.njk" import text %}
+{% from "sections/particles/ctas.njk" import ctas %}
+
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
 
@@ -47,7 +50,7 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="text-wrapper section-inner">
-  {% include "sections/particles/text.njk" %}
-  {% include "sections/particles/ctas.njk" %}
+  {{ text(section) }}
+  {{ ctas(section) }}
 </div>
 </{{section.container}}>

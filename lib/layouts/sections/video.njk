@@ -28,6 +28,7 @@
     end: ""
 #}
 
+{% from "sections/particles/video.njk" import video %}
 
 {# build the sections class string #}
 {% set sectionClasses = "section-wrapper" %}
@@ -78,6 +79,6 @@
   {% if sectionStyles %} style="{{ sectionStyles }}" {% endif %}
 >
   <div class="video-wrapper section-inner">
-    {% include "sections/particles/video.njk" %}
+    {{ video(section) }}
   </div>
 </{{section.container}}>

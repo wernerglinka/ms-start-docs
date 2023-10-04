@@ -54,9 +54,9 @@ sections:
     isReverse: false
     hasCtas: true
     text:
-      prefix: Weather Forecast
-      title: California
-      header: h2
+      prefix: "Weather Forecast"
+      title: "California"
+      header: "h2"
       subtitle: "SF Bay Area"
       prose: |-
         The Bay Area will see partly cloudy skies with seasonal temperatures through Wednesday, but changes are coming for the second half of the week. By Thursday, north winds are expected to clear out skies and elevate the fire risk in the Sacramento Valley.
@@ -109,9 +109,9 @@ sections:
             isReverse: false
             hasCtas: true
             text:
-              prefix: Weather Forecast
-              title: California
-              header: h2
+              prefix: "Weather Forecast"
+              title: "California"
+              header: "h2"
               subtitle: "SF Bay Area"
               prose: |-
                 The Bay Area will see partly cloudy skies with seasonal tempera...

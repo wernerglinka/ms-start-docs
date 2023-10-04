@@ -52,7 +52,7 @@ sections:
     image:
       src: https://source.unsplash.com/random/800x600
       alt: my alt text
-      caption: "Image by unsplash.com."
+      caption: "Image by unsplash.com"
 
 
 
@@ -92,7 +92,7 @@ sections:
             image:
               src: https://source.unsplash.com/random/800x600
               alt: my alt text
-              caption: ""
+              caption: "Image by unsplash.com"
         ```
 
 ---

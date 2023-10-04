@@ -55,11 +55,11 @@ sections:
     isReverse: true
     hasCtas: true
     text:
-      prefix: the prefix
-      title: the title
-      header: h2
-      subtitle: the subtitle
-      prose: Cras mattis consectetur purus sit amet fermentum.
+      prefix: "the prefix"
+      title: "the title"
+      header: "h2"
+      subtitle: "the subtitle"
+      prose: "Cras mattis consectetur purus sit amet fermentum."
     ctas:
       - url: "/sandbox/"
         label: "Checkout the Sandbox"
@@ -107,11 +107,11 @@ sections:
             isReverse: true
             hasCtas: true
             text:
-              prefix: the prefix
-              title: the title
-              header: h2
-              subtitle: the subtitle
-              prose: Cras mattis consectetur purus sit amet fermentum.
+              prefix: "the prefix"
+              title: "the title"
+              header: "h2"
+              subtitle: "the subtitle"
+              prose: "Cras mattis consectetur purus sit amet fermentum."
             ctas:
               - url: "/sandbox/"
                 label: "Checkout the Sandbox"

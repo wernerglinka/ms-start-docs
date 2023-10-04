@@ -35,12 +35,10 @@
       buttonStyle: "primary"
 #}
 
-
+{% from "page-sections/particles/text.njk" import text %}
+{% from "page-sections/particles/ctas.njk" import ctas %}
 
 <div class="text-wrapper section-inner">
-
-  {% include "page-sections/particles/text.njk" %}
-
-  {% include "page-sections/particles/ctas.njk" %}
-
+  {{ text(params) }}
+  {{ ctas(params) }}
 </div>

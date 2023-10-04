@@ -17,7 +17,8 @@
     caption: ''
 #}
 
+{% from "page-sections/particles/image.njk" import image %}
+
 <div class="image-wrapper section-inner">
-  <img src="{{ params.image.src }}" alt="{{ params.image.alt }}" />
-  <p class="caption">{{ params.image.caption }}</p>
+  {{ image(params) }}
 </div>

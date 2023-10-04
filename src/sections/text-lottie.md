@@ -37,8 +37,6 @@ sections:
         **Text Area with Markdown:** Accompanying the Lottie animation is a text area that fully supports Markdown formatting. This feature allows you to provide detailed explanations, descriptions, or context related to the animation or the content surrounding it. Markdown's flexibility enables you to format and style text for maximum clarity and engagement.
 
         **Layout Flexibility:** By default, the Lottie animation is positioned on the left side of the text area, creating an engaging visual flow. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
-
-        Lottie animation by [lottiefiles.com](https://lottiefiles.com/)
   
   - container: section
     name: text-lottie
@@ -56,11 +54,11 @@ sections:
     isReverse: false
     hasCtas: false
     text:
-      prefix: the prefix
-      title: the title
-      header: h2
-      subtitle: the subtitle
-      prose: Cras mattis consectetur purus sit amet fermentum.
+      prefix: "the prefix"
+      title: "the title"
+      header: "h2"
+      subtitle: "the subtitle"
+      prose: "Cras mattis consectetur purus sit amet fermentum."
     ctas:
       - url: ""
         label: ""
@@ -72,6 +70,7 @@ sections:
       control:
         autoplay: true
         loop: true
+      caption: "Lottie animation by lottiefiles.com"
 
   - container: "section"
     name: "text"
@@ -109,11 +108,11 @@ sections:
             isReverse: false
             hasCtas: false
             text:
-              prefix: the prefix
-              title: the title
-              header: h2
-              subtitle: the subtitle
-              prose: Cras mattis consectetur purus sit amet fermentum.
+              prefix: "the prefix"
+              title: "the title"
+              header: "h2"
+              subtitle: "the subtitle"
+              prose: "Cras mattis consectetur purus sit amet fermentum."
             ctas:
               - url: ""
                 label: ""
@@ -125,6 +124,7 @@ sections:
               control:
                 autoplay: true
                 loop: true
+              caption: "Lottie animation by lottiefiles.com"
         ```
 
 ---

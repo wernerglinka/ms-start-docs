@@ -40,8 +40,6 @@ sections:
 
         **Layout Flexibility:** By default, the video player is positioned on the left side of the text area. However, you have the flexibility to reverse this layout by setting the `isReverse` field to `true`.
 
-        Thumbnail by unsplash.com.
-  
   - container: section
     name: text-video
     containerFields:
@@ -58,11 +56,11 @@ sections:
     isReverse: false
     hasCtas: false
     text:
-      prefix: the prefix
-      title: the title
-      header: h2
-      subtitle: the subtitle
-      prose: Cras mattis consectetur purus sit amet fermentum.
+      prefix: "the prefix"
+      title: "the title"
+      header: "h2"
+      subtitle: "the subtitle"
+      prose: "Cras mattis consectetur purus sit amet fermentum."
     ctas:
       url: ""
       label: ""
@@ -114,12 +112,11 @@ sections:
                 isDark: false
             isReverse: false
             hasCtas: false
-            text:
-              prefix: the prefix
-              title: the title
-              header: h2
-              subtitle: the subtitle
-              prose: Cras mattis consectetur purus sit amet fermentum.
+            prefix: "the prefix"
+              title: "the title"
+              header: "h2"
+              subtitle: "the subtitle"
+              prose: "Cras mattis consectetur purus sit amet fermentum."
             ctas:
               url: ""
               label: ""

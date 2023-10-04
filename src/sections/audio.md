@@ -54,6 +54,11 @@ sections:
     audio:
       ogg: ""
       mpeg: "/assets/acoustic-guitar-loop-f-91bpm-132687.mp3"
+    hasImage: false
+    image:
+      src: ""
+      alt: ""
+      caption: ""
 
   - container: "section"
     name: "text"
@@ -91,6 +96,11 @@ sections:
             audio:
               ogg: ""
               mpeg: "/assets/acoustic-guitar-loop-f-91bpm-132687.mp3"
+            hasImage: false
+            image:
+              src: ""
+              alt: ""
+              caption: ""
         ```
 
 ---
