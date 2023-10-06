@@ -1,19 +1,18 @@
 .icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  svg {
     width: 100%;
     height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    stroke: var(--color-primary);
+  }
 
-    svg {
-      width: 100%;
-      height: 100%;
-      max-width: 400px;
-      max-height: 400px;
-      stroke: var(--color-primary);
-    }
+  .caption {
+    text-align: center;
   }
 }

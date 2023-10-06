@@ -24,8 +24,10 @@
 
 <div class="list-wrapper section-inner">
   {% set source = params.list.source %}
-  {% set template = params.list.template %}
+  {% set template = params.list.listType %}
   {% set selections = params.list.selections %}
+  {% set logoWidth = params.list.imageWidth %}
+  {% set logosListLength = selections | length  *  logoWidth %}
 
   {# get the selected items from the source list #}
   {# refData is a meta variable that contains data for the site #}
@@ -36,7 +38,7 @@
     {% set selection = refData[source] | getSelections(selections) %}
   {% endif %}
   
-  {% include "sections/particles/lists/" + template + ".njk" ignore missing %}
+  {% include "page-sections/particles/lists/" + template + ".njk" ignore missing %}
 
 </div>
 

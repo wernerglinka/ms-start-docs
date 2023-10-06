@@ -19,6 +19,10 @@
     "url": "/sections/image"
   },
   {
+    "title": "List",
+    "url": "/sections/list"
+  },
+  {
     "title": "Lottie",
     "url": "/sections/lottie"
   },
