@@ -58,25 +58,27 @@ sections:
       subtitle: ""
       prose: |-
         ```yaml
-          - container: "section"
-            name: "leaflet"
-            containerFields:
-              isDisabled: false
-              isAnimated: false
-              containerId: ""
-              containerClass: ""
-              inContainer: false
-              isNarrow: false
-              background:
-                color: ""
-                image: ""
-                isDark: false
-            leaflet:
-              centerX: 44.9778
-              centerY: -93.2650
-              zoom: 10
-              containerId: "map"
-              containerHeight: 600
+          leaflet:
+          latitute: 51.509865
+          longitude: -0.118092
+          zoom: 10
+          containerId: "map"
+          containerHeight: 600
+          markers:
+            - title: London
+              latitute: 51.509865
+              longitude: -0.118092
+              content: 
+                title: "London"
+                body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe, as well as one of the largest European cities, located on the southeastern part of the British Island."
+                link: "https://en.wikipedia.org/wiki/London"
+            - title: Windsor Castle
+              latitute: 51.483334
+              longitude: -0.604167
+              content: 
+                title: "Windsor Castle"
+                body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire, the United Kingdom, situated 23 miles west of London."
+                link: "https://en.wikipedia.org/wiki/Windsor_Castle"
         ```
     hasCtas: false
     ctas:
@@ -100,10 +102,24 @@ sections:
         image: ""
         isDark: false
     leaflet:
-      centerX: 44.9778
-      centerY: -93.2650
+      latitute: 51.509865
+      longitude: -0.118092
       zoom: 10
       containerId: "map"
       containerHeight: 600
-
+      markers:
+        - title: London
+          latitute: 51.509865
+          longitude: -0.118092
+          content: 
+            title: "London"
+            body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe, as well as one of the largest European cities, located on the southeastern part of the British Island."
+            link: "https://en.wikipedia.org/wiki/London"
+        - title: Windsor Castle
+          latitute: 51.483334
+          longitude: -0.604167
+          content: 
+            title: "Windsor Castle"
+            body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire, the United Kingdom, situated 23 miles west of London."
+            link: "https://en.wikipedia.org/wiki/Windsor_Castle"
 ---

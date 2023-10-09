@@ -51,10 +51,11 @@
     <div class="map-wrapper leaflet-map js-leaflet-map section-inner">
       <div 
         id="{{ section.leaflet.containerId }}"
-        data-centerx="{{ section.leaflet.centerX }}"
-        data-centery="{{ section.leaflet.centerY }}"
+        data-latitute="{{ section.leaflet.latitute }}"
+        data-longitude="{{ section.leaflet.longitude }}"
         data-zoom="{{ section.leaflet.zoom }}" 
-        style="height: {{ section.leaflet.containerHeight }}px; width: 100%;">
+        style="height: {{ section.leaflet.containerHeight }}px; width: 100%;" 
+        data-markers="{{ section.leaflet.markers | objToString }}">
       </div>
     </div>
   </div>
