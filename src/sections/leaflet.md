@@ -58,7 +58,7 @@ sections:
       subtitle: ""
       prose: |-
         ```yaml
-          leaflet:
+        leaflet:
           latitute: 51.509865
           longitude: -0.118092
           zoom: 10
@@ -70,14 +70,14 @@ sections:
               longitude: -0.118092
               content: 
                 title: "London"
-                body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe, as well as one of the largest European cities, located on the southeastern part of the British Island."
+                body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe..."
                 link: "https://en.wikipedia.org/wiki/London"
             - title: Windsor Castle
               latitute: 51.483334
               longitude: -0.604167
               content: 
                 title: "Windsor Castle"
-                body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire, the United Kingdom, situated 23 miles west of London."
+                body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire..."
                 link: "https://en.wikipedia.org/wiki/Windsor_Castle"
         ```
     hasCtas: false
@@ -113,13 +113,13 @@ sections:
           longitude: -0.118092
           content: 
             title: "London"
-            body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe, as well as one of the largest European cities, located on the southeastern part of the British Island."
+            body: "London is a political, historical, cultural, and tourist center of the United Kingdom, an important city and commercial spot in Western Europe..."
             link: "https://en.wikipedia.org/wiki/London"
         - title: Windsor Castle
           latitute: 51.483334
           longitude: -0.604167
           content: 
             title: "Windsor Castle"
-            body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire, the United Kingdom, situated 23 miles west of London."
+            body: "Windsor Castle is one of the most known buildings and a royal residence in the county of Berkshire..."
             link: "https://en.wikipedia.org/wiki/Windsor_Castle"
 ---
