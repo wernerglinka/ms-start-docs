@@ -13,7 +13,7 @@ This website provides the documentation of the section components that are avail
 
 The "sections sandbox" serves as an interactive platform to visualize and customize different sections available when using `ms-start` in the browser. This platform provides a user-friendly interface where each section's default appearance and behavior can be experienced and modified.
 
->>>>> Image of the sections sandbox here
+![Sections Sandbox](https://ms-start-docs.netlify.app/assets/images/screenshot.png)
 
 ## Components of the Sections Sandbox System
 
@@ -161,6 +161,3 @@ For instance:
 - **Section Selection**: When a user clicks on a section template from the sidebar, the active section is updated, and its properties form is displayed.
 - **Code Editor**: A toggle mechanism shows or hides the CodeMirror code editor where additional styles can be edited.
 - **Clipboard Actions**: Several clipboard-related actions allow users to copy the current section's YAML configuration or additional styles directly to their clipboard.
-
-
-
