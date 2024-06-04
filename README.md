@@ -29,7 +29,6 @@ Upon selecting a section component from the sidebar, the section is rendered in 
 ### Code Editor
 The code editor is a toggleable panel that allows users to add styles for the selected section. **These styles may be copied to the clipboard for use in the project**.
   - The code editor uses CodeMirror, a JavaScript library that provides a code editor component.
-  - When the user makes changes to the code editor, the changes are reflected in real-time in the section rendering above.
 
 ### Section Properties Form
 
