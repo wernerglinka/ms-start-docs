@@ -137,7 +137,7 @@ let editor = null;
 - **`getAdditionalStyles`**: Retrieves additional styles.
 - **`updatePropsDisplay`**: Updates the properties display to reflect the current state of the `section` props object.
 - **`updateDeepObject`**: A helper function that synchronizes the flat form values with the deep `section` object.
-- **`dispatchYpdate`**: A helper function that processes the form data and dispatches a custom sectionUpdated event.
+- **`dispatchUpdate`**: A helper function that processes the form data and dispatches a custom sectionUpdated event.
 - **`handleFormSubmit`**: A function that handles the form submission, extracting form data, and calling dispatchUpdate
 - **`initScripts`**: A function that initializes various scripts based on the template (videos, lists, CTAs).
 - **`handleSectionUpdated`**: A function that handles the custom sectionUpdated event, updating the `section` object and re-rendering the section.

@@ -1,4 +1,4 @@
---- 
+---
 layout: "sections.njk"
 draft: false
 navLabel: "Text Video"
@@ -76,7 +76,6 @@ sections:
       start: ""
       end: ""
 
-
   - container: "section"
     name: "text"
     containerFields:
@@ -112,7 +111,8 @@ sections:
                 isDark: false
             isReverse: false
             hasCtas: false
-            prefix: "the prefix"
+            text: 
+              prefix: "the prefix"
               title: "the title"
               header: "h2"
               subtitle: "the subtitle"
@@ -132,5 +132,4 @@ sections:
               start: ""
               end: ""
         ```
-
 ---
